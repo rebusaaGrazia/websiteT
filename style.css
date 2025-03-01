@@ -1,0 +1,108 @@
+body{
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.barra{
+    background-color: #F6F5EA;
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.central{
+    text-align: center;
+}
+#arrow{
+    position: absolute;
+    visibility: hidden;
+}
+#img{
+    height: 80px;
+    margin-bottom: 0;
+}
+
+.testi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.testi > * + * {
+    margin-left: 10px;
+}
+
+#insta{
+    border: 1px solid;
+    border-radius: 20%;
+    border-color: #9C9A81;
+    background-color: #9C9A81;
+
+    height: 40px;
+    width: 40px;
+    text-align: center;
+
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+
+
+}
+.fa-instagram{
+    transform: scale(1.5, 1.5);
+    margin-top: 12px;
+}
+
+#prenota{
+    border: 1px solid;
+    border-color: #9C9A81;
+    background-color: #9C9A81;
+
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+}
+
+#imgPrinci{
+
+
+}
+/*
+#p1{
+    visibility: hidden;
+}
+#p2{
+     visibility: hidden;
+}
+#p3{
+    visibility: hidden;
+}
+#p4{
+    visibility: hidden;
+}
+#img{
+    visibility: hidden;
+}
+#insta{
+    visibility: hidden;
+}
+#prenota{
+    visibility: hidden;
+}
+
+#arrow{
+    border
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: unset;
+}
+.barra:hover{
+    height: 150px;
+}*/
