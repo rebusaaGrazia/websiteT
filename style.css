@@ -11,6 +11,7 @@ body{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .central{
     text-align: center;
@@ -32,6 +33,13 @@ body{
 .testi > * + * {
     margin-left: 10px;
 }
+#p1:hover,
+#p2:hover,
+#p3:hover,
+#p4:hover{
+    text-shadow: 0px 0px 5px #9C9A81;
+}
+
 
 #insta{
     border: 1px solid;
@@ -70,39 +78,29 @@ body{
     margin-right: 5%;
 }
 
-#imgPrinci{
-
-
-}
-/*
-#p1{
-    visibility: hidden;
-}
-#p2{
-     visibility: hidden;
-}
-#p3{
-    visibility: hidden;
-}
-#p4{
-    visibility: hidden;
-}
-#img{
-    visibility: hidden;
-}
-#insta{
-    visibility: hidden;
-}
-#prenota{
-    visibility: hidden;
+#insta:hover,
+#prenota:hover{
+    background-color: #F6F5EA;
 }
 
-#arrow{
-    border
-    margin-left: auto;
+#p1:active,
+#p2:active,
+#p3:active,
+#p4:active{
+    color: #9C9A81;
+}
+
+#one{
+    background-color: black;
+}
+
+.page1{
+    z-index: 0;
+    display: flex;
+
+    align-self: center;
+    transform: scale(0.1,0.1);
+    margin-left: 0;
     margin-right: auto;
-    margin-top: unset;
+    margin-top: 0;
 }
-.barra:hover{
-    height: 150px;
-}*/
