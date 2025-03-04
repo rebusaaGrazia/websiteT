@@ -1,6 +1,8 @@
 body{
-    background-color: blueviolet;
+    background-color: #F6F5EA;
     margin: 0;
+    height: auto;
+    width: auto;
 }
 
 .barra{
@@ -15,10 +17,6 @@ body{
 }
 .central{
     text-align: center;
-}
-#arrow{
-    position: absolute;
-    visibility: hidden;
 }
 #img{
     height: 80px;
@@ -55,23 +53,20 @@ body{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 5%;
-
-
 }
 .fa-instagram{
     transform: scale(1.5, 1.5);
-    margin-top: 12px;
 }
 
-#prenota{
+#prenotaPrinc{
     border: 1px solid;
     border-color: #9C9A81;
     background-color: #9C9A81;
 
     text-align: center;
-    font-size: 20px;
-    padding: 15px;
-    width: 100px;
+    justify-content: center;
+    font-size: 15px;
+    padding: 20px;
 
     margin-top: auto;
     margin-bottom: auto;
@@ -79,7 +74,7 @@ body{
 }
 
 #insta:hover,
-#prenota:hover{
+#prenotaPrinc:hover{
     background-color: #F6F5EA;
 }
 
@@ -95,12 +90,59 @@ body{
 }
 
 .page1{
-    z-index: 0;
-    display: flex;
-
-    align-self: center;
-    transform: scale(0.1,0.1);
-    margin-left: 0;
+    background-image: url("first.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border: 1px solid;
+    border-color: #9C9A81;
+    width: 90%;
+    height: 1000px;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#prenota1{
+    border: 1px solid;
+    border-color: #F6F5EA;
+    background-color: #F6F5EA;
+    color: #363317;
+
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 60px;
+    width: 500px;
+
+    margin-top: 5%;
+}
+#pres1{
+    font-size: 60px;
+    color: #F6F5EA;
+}
+#prenota1:hover{
+    background-color: #9C9A81;
+    color: #F6F5EA;
+}
+.t1{
+    margin-top: 10%;
+
+    font-size: 30px;
+    color: #363317;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: black;
 }

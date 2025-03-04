@@ -15,28 +15,35 @@
 </head>
 <body>
     <div class="barra">
-        <botton id="insta">
+        <button id="insta">
             <i class="fa-brands fa-instagram"></i>
-        </botton>
+        </button>
 
         <div class="central">
             <img id="img" src="logo.png">
 
             <div class="testi">
-                <p id="p1"
+                <a id="p1"
                    onclick="javascript:alert('event has been triggered');"
-                >Chi siamo</p>
-                <p id="p2" >Galleria</p>
-                <p id="p3">Visita</p>
-                <p id="p4">Contatti</p>
+                >Chi siamo</a>
+                <a id="p2" href="http://www.w3schools.com/TAgs/tag_button.asp">Galleria</a>
+                <a id="p3" href="page2.html">Visita</a>
+                <a id="p4">Contatti</a>
             </div>
         </div>
 
-        <botton id="prenota" onclick="changeColor()" >prenota</botton>
+        <button type="button" id="prenotaPrinc" onclick="changeColor()" >Prenota una camera</button>
     </div>
 
-    <div class="page1">
-        <img id="imgPrinci" src="first.png">
+    <div class="page1" >
+        <p id="pres1">Un rifugio accogliente sotto archi di pietra</p>
+        <button type="button" id="prenota1" onclick="" >Prenota una camera</button>
+    </div>
+
+    <div class="t1">
+        <p>Situato su un terreno vasto nella splendita campagna pugliese,</p>
+        <p style="margin-top: 0">l'abitazione sorge come una modesta cantina di vini a conduzione famigliare,</p>
+        <p style="margin-top: 0">adesso accuratamente ristrutturata.</p>
     </div>
 </body>
 </html>
