@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trullo / Map</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/a0814e2728.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="barra">
+        <button id="insta">
+            <i class="fa-brands fa-instagram"></i>
+        </button>
+
+        <div class="central">
+            <img id="img" src="logo.png" width="140" height="190">
+
+            <div class="testi">
+                <a id="p1" href="chiSiamo.html">Chi siamo</a>
+                <a id="p2" href="galleria.html">Galleria</a>
+                <u><a id="p3" >Mappa</a></u>
+                <a id="p4" href="contatti.html">Contatti</a>
+            </div>
+        </div>
+
+        <button type="button" id="prenotaPrinc" onclick="changeColor()" >Prenota una camera</button>
+    </div>
+
+    <div class="presentation">
+        <h1 style="margin-top: 5%">Location</h1>
+        <p>Contrada Cappagliaro  n° 28</p>
+        <p>Locorotondo, Città Metropolitana di Bari</p>
+
+        <h3 style="margin-top: 5%">Numeri di telefono</h3>
+        <p>(+39) 334 744 1041</p>
+        <p>(+39) 375 670 5091</p>
+
+        <gmp-map
+                center="40.7700365,17.3054228"
+                zoom="12"
+                map-id="DEMO_MAP_ID"
+                id="map">
+            <gmp-advanced-marker
+                    position="40.7700365,17.3054228"
+                    title="Location Graziella Trullo, Ba"
+            ></gmp-advanced-marker>
+        </gmp-map>
+        <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
+                defer
+        ></script>
+    </div>
+
+</body>
+</html>
