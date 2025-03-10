@@ -5,7 +5,12 @@
   <title>Trullo / Contatti</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" href="logo.png" type="image/x-icon" />
-  <script src="https://kit.fontawesome.com/a0814e2728.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a0814e2728.js" crossorigin="anonymous">
+    function myFunction() {
+      var x = document.getElementById("mess").value;
+      document.getElementById("name").innerHTML = x;
+    }
+  </script>
 </head>
 <body>
   <div class="barra">
@@ -41,9 +46,26 @@
     <p>grazia0.0lisi@gmail.com</p>
 
     <h3 style="margin-top: 5%">Modulo di contatto</h3>
-    <div>
+    <form class="modulo">
+      <label for="name">Nome <i>(obbligatorio)</i></label>
+      <input id="name" type="text"/>
+      <label for="surname">Cognome <i>(obbligatorio)</i></label>
+      <input id="surname" type="text"/>
 
-    </div>
+      <label for="mail">E-mail <i>(obbligatorio)</i></label>
+      <input id="mail" type="email"/>
+
+      <label for="numTel">Numero di telefono</label>
+      <input id="numTel" type="tel"/>
+
+      <label for="ogg">Oggetto <i>(obbligatorio)</i></label>
+      <input id="ogg" type="text"/>
+
+      <label for="mess" >Messaggio <i>(obbligatorio)</i></label>
+      <textarea id="mess"></textarea>
+
+      <input type="submit" value="send" onclick="myFunction()">
+    </form>
   </div>
 
 </body>
