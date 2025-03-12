@@ -21,7 +21,8 @@ body{
     margin-left: 8%;
 }
 #img{
-    height: 80px;
+    height: 150px;
+    width: 50%;
     margin-bottom: 0;
 }
 
@@ -164,4 +165,16 @@ a:hover, a:visited, a:link, a:active
     height: 700px;
     width: 80%;
     margin-top: 5%;
+}
+@media screen and (max-width: 481px) {
+    #insta{
+        height: auto;
+        width: auto;
+        padding: 2%;
+    }
+    #prenotaPrinc{
+        padding: 2%;
+        font-size: 100%;
+        margin-left: 5%;
+    }
 }
