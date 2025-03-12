@@ -21,8 +21,7 @@ body{
     margin-left: 8%;
 }
 #img{
-    height: 150px;
-    width: 50%;
+    height: 80px;
     margin-bottom: 0;
 }
 
@@ -75,6 +74,7 @@ body{
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 5%;
+    margin-left: 5%;
 }
 
 #insta:hover,
@@ -124,13 +124,17 @@ body{
     justify-content: center;
     font-size: 20px;
     height: 60px;
-    width: 500px;
+    max-width: 500px;
 
     margin-top: 5%;
+    margin-right: 7%;
+    width: 70%;
 }
 #pres1{
     font-size: 60px;
     color: #F6F5EA;
+    margin-left: 7%;
+
 }
 #prenota1:hover{
     background-color: #9C9A81;
@@ -144,6 +148,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 a:hover, a:visited, a:link, a:active
 {
@@ -158,6 +165,8 @@ a:hover, a:visited, a:link, a:active
     align-items: center;
 
     margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #map{
@@ -176,5 +185,8 @@ a:hover, a:visited, a:link, a:active
         padding: 2%;
         font-size: 100%;
         margin-left: 5%;
+    }
+    #pres1{
+        margin-left: 7%;
     }
 }
