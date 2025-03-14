@@ -94,7 +94,7 @@ body{
 }
 
 .page1{
-    background-image: url("first.png");
+    background-image: url("photos/first.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
@@ -164,6 +164,7 @@ a:hover, a:visited, a:link, a:active
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     margin-bottom: 10%;
     margin-left: 5%;
@@ -218,6 +219,50 @@ a:hover, a:visited, a:link, a:active
 #a1\.2:hover{
     text-shadow: 0 0 5px #F6F5EA;
 }
+
+.present{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10%;
+}
+.present > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.present > div > div{
+    max-width: 1000px;
+    width: 50%;
+    height: 50%;
+    margin: 5%;
+    text-align: center;
+    font-size: 120%;
+}
+
+.present > div > div > img{
+    max-width:1000px;
+    max-height: 1000px;
+    width: 100%;
+    height: 50%;
+}
+
+#divS1{
+    background: url("https://mito-obj01.vhostingcloud.com/telebari/2024/10/natale-a-locorotondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+    color: #F6F5EA;
+
+}
+#divS2{
+    opacity: 0.8;
+}
+#divS1 > h2, #divS1 > p{text-shadow: 0 0 5px black;}
+
 @media screen and (max-width: 481px) {
     #insta{
         height: auto;
@@ -234,7 +279,6 @@ a:hover, a:visited, a:link, a:active
     }
     .pres2{
         flex-direction: column;
-
     }
     .pres2 > div{
         float: left;
@@ -254,4 +298,23 @@ a:hover, a:visited, a:link, a:active
     #p1\.2 > a{
         font-size: 200%;
     }
+    .present > div{
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+    }
+    .present > div > div{
+        width: 90%;
+        font-size: 100%;
+    }
+    .present > div > div > img{
+        margin: 0;
+        height: 30%;
+    }
+    #img3{height: 50%;}
+    #img4{height: 40%;}
+    #imgS1{
+        height: 80%;
+    }
+
 }
