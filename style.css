@@ -18,7 +18,7 @@ body{
 }
 .central{
     text-align: center;
-    margin-left: 8%;
+    margin-left: 13%;
 }
 #img{
     height: 80px;
@@ -94,12 +94,12 @@ body{
 }
 
 .page1{
-    background-image: url("photos/first.png");
+    background-image: url("photos/pE1.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: revert;
     border: 1px solid;
     border-color: #9C9A81;
     width: 90%;
@@ -112,6 +112,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: right;
 }
 
 #prenota1{
@@ -133,7 +134,8 @@ body{
 #pres1{
     font-size: 60px;
     color: #F6F5EA;
-    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 2%;
 
 }
 #prenota1:hover{
@@ -215,6 +217,11 @@ a:hover, a:visited, a:link, a:active
 #p1\.2{
     margin-bottom: 10%;
     height: 400px;
+    background: url("https://cdn.cosmos.so/13219224-64ae-4ff5-a2b6-7499fc733884?format=jpeg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+    background-size: cover;
 }
 #a1\.2:hover{
     text-shadow: 0 0 5px #F6F5EA;
@@ -247,21 +254,29 @@ a:hover, a:visited, a:link, a:active
     height: 50%;
 }
 
-#divS1{
-    background: url("https://mito-obj01.vhostingcloud.com/telebari/2024/10/natale-a-locorotondo.jpg");
+#divS1,
+#divS2,
+#divS3{
+    background: #9C9A81;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-
     position: relative;
     color: #F6F5EA;
 
 }
-#divS2{
-    opacity: 0.8;
+.photos > a > img{
+    margin: 2%;
+    margin-bottom: 5%;
+    float: left;
+    border: 1px solid #363317;
+    width: 400px;
+    box-sizing: border-box;
 }
-#divS1 > h2, #divS1 > p{text-shadow: 0 0 5px black;}
+.photos > a > img:hover{
+    box-shadow: 0 0 5px #363317;
+}
 
 @media screen and (max-width: 481px) {
     #insta{
