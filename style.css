@@ -285,7 +285,7 @@ a:hover, a:visited, a:link, a:active
 
 @media screen and (max-width: 1024px) {
     .barra{
-        transform: scale(0.9,1);
+        transform: scale(0.95,1);
     }
     .barra > div,
     .barra > button,
