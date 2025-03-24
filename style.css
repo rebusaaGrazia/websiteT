@@ -278,7 +278,18 @@ a:hover, a:visited, a:link, a:active
     box-shadow: 0 0 5px #363317;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 767px) {
+    .barra{
+        transform: scale(0.9,1);
+    }
+    .barra > div,
+    .barra > button,
+    .barra > a{
+        transform: scale(0.8,0.8);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
     #insta{
         height: auto;
         width: auto;
