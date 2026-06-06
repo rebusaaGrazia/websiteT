@@ -21,6 +21,9 @@ a, a:hover, a:visited, a:link, a:active {
     color: var(--black);
 }
 
+h1, h2, h3, a{color: var(--dark);}
+i.fest{color: var(--cream);}
+
 .barra {
     background-color: var(--cream);
     width: 100%;
@@ -249,7 +252,7 @@ a, a:hover, a:visited, a:link, a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding: 0 8%;
 }
 
@@ -279,6 +282,28 @@ a, a:hover, a:visited, a:link, a:active {
 .photos > a > img:hover {
     box-shadow: 0 0 8px var(--dark);
 }
+
+.reviews-section { padding: 3rem 6%; background: #F6F5EA; }
+.reviews-section h2 { text-align: center; font-size: 2rem; color: #363317; margin-bottom: 2rem; font-weight: 700; }
+.rv-outer { position: relative; display: flex; align-items: center; gap: 12px; }
+.rv-window { overflow: hidden; flex: 1; }
+.rv-track { display: flex; transition: transform 0.4s ease; }
+.rv-card { background: #fff; border: 1px solid #9C9A81; padding: 1.4rem; flex-shrink: 0; box-sizing: border-box; }
+.rv-stars { color: #9C9A81; font-size: 1rem; margin-bottom: 0.6rem; letter-spacing: 2px; }
+.rv-text { font-size: 0.95rem; color: #363317; line-height: 1.6; font-style: italic; margin: 0; }
+.rv-btn { background: #363317; border: none; color: #F6F5EA; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.rv-btn:hover { background: #9C9A81; }
+.rv-btn:disabled { background: #ccc; cursor: default; }
+.rv-dots { display: flex; justify-content: center; gap: 8px; margin-top: 1.2rem; }
+.rv-dot { width: 8px; height: 8px; border-radius: 50%; background: #9C9A81; opacity: 0.35; border: none; cursor: pointer; padding: 0; transition: opacity 0.2s; }
+.rv-dot.active { opacity: 1; }
+
+.site-footer { background: #363317; color: #F6F5EA; padding: 3rem 6% 1.5rem; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+.footer-col h4 { font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: #9C9A81; margin: 0 0 1rem; font-weight: normal; }
+.footer-col p, .footer-col a { font-size: 0.95rem; color: #F6F5EA; margin: 0.3rem 0; display: block; text-decoration: none; line-height: 1.6; }
+.footer-col a:hover { color: #9C9A81; }
+.footer-bottom { border-top: 1px solid #9C9A81; padding-top: 1.2rem; text-align: center; font-size: 0.8rem; color: #9C9A81; }
 
 @media screen and (max-width: 768px) {
     .barra {
