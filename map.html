@@ -2,10 +2,10 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Trullo / Map</title>
+    <title>Trullo / Mappa</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="photos/logo.png" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="photos/logo.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/a0814e2728.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,46 +13,34 @@
         <button id="insta">
             <a href="contatti.html"><i class="fa-solid fa-phone"></i></a>
         </button>
-
         <div class="central">
             <a href="main.html"><img id="img" src="photos/logo.png" width="140" height="190"></a>
-
             <div class="testi">
                 <a id="p1" href="chiSiamo.html">Chi siamo</a>
                 <a id="p2" href="galleria.html">Galleria</a>
-                <u><a id="p3" >Mappa</a></u>
+                <u><a id="p3">Mappa</a></u>
                 <a id="p4" href="contatti.html">Contatti</a>
             </div>
         </div>
-
         <a href="prenota.html" id="prenotaPrinc">Prenota una camera</a>
     </div>
 
     <div class="presentation">
-        <h1 style="margin-top: 5%">Location</h1>
-        <p style="margin-bottom: 2px">Contrada Cappagliaro  n° 28</p>
+        <h1 style="margin-top:5%">Location</h1>
+        <p style="margin-bottom:2px">Contrada Cappagliaro n° 28</p>
         <p>Locorotondo, Città Metropolitana di Bari</p>
 
-        <h2 style="margin-top: 5%">Numeri di telefono</h2>
+        <h2 style="margin-top:5%">Numeri di telefono</h2>
         <p>(+39) 334 744 1041</p>
         <p>(+39) 375 670 5091</p>
 
-        <h1 style="margin-top: 5%">Mappa</h1>
-        <gmp-map
-                center="40.7700365,17.3054228"
-                zoom="12"
-                map-id="DEMO_MAP_ID"
-                id="map">
-            <gmp-advanced-marker
-                    position="40.7700365,17.3054228"
-                    title="Location Graziella Trullo, Ba"
-            ></gmp-advanced-marker>
+        <h1 style="margin-top:5%">Mappa</h1>
+        <gmp-map center="40.7700365,17.3054228" zoom="12" map-id="DEMO_MAP_ID" id="map">
+            <gmp-advanced-marker position="40.7700365,17.3054228" title="Location Graziella Trullo, Ba"></gmp-advanced-marker>
         </gmp-map>
-        <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
-                defer
-        ></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta" defer></script>
     </div>
 
+    <script src="router.js"></script>
 </body>
 </html>

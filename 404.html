@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Graziella Trullo</title>
+    <script>
+        var routes = {
+            '/websiteT/chi-siamo': '/websiteT/chiSiamo.html',
+            '/websiteT/galleria': '/websiteT/galleria.html',
+            '/websiteT/mappa': '/websiteT/map.html',
+            '/websiteT/contatti': '/websiteT/contatti.html',
+            '/websiteT/prenota': '/websiteT/prenota.html',
+            '/websiteT/home': '/websiteT/main.html',
+            '/websiteT/': '/websiteT/main.html',
+            '/websiteT': '/websiteT/main.html'
+        };
+        var path = window.location.pathname.replace(/\/$/, '') || '/';
+        var target = routes[path] || '/main.html';
+        window.location.replace(target);
+    </script>
+</head>
+
+<body></body>
+
+</html>
