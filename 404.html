@@ -6,17 +6,17 @@
     <title>Graziella Trullo</title>
     <script>
         var routes = {
-            '/websiteT/chi-siamo': '/websiteT/chiSiamo.html',
-            '/websiteT/galleria': '/websiteT/galleria.html',
-            '/websiteT/mappa': '/websiteT/map.html',
-            '/websiteT/contatti': '/websiteT/contatti.html',
-            '/websiteT/prenota': '/websiteT/prenota.html',
-            '/websiteT/home': '/websiteT/main.html',
-            '/websiteT/': '/websiteT/main.html',
-            '/websiteT': '/websiteT/main.html'
+            '/websiteT/chi-siamo': '/websiteT/chiSiamo',
+            '/websiteT/galleria': '/websiteT/galleria',
+            '/websiteT/mappa': '/websiteT/map',
+            '/websiteT/contatti': '/websiteT/contatti',
+            '/websiteT/prenota': '/websiteT/prenota',
+            '/websiteT/home': '/websiteT/main',
+            '/websiteT/': '/websiteT/main',
+            '/websiteT': '/websiteT/main'
         };
         var path = window.location.pathname.replace(/\/$/, '') || '/';
-        var target = routes[path] || '/main.html';
+        var target = routes[path] || '/websiteT/main';
         window.location.replace(target);
     </script>
 </head>

@@ -1,12 +1,12 @@
 const repo = '/websiteT';
 
 const reverseRoutes = {
-    'main.html': repo + '/home',
-    'chiSiamo.html': repo + '/chi-siamo',
-    'galleria.html': repo + '/galleria',
-    'map.html': repo + '/mappa',
-    'contatti.html': repo + '/contatti',
-    'prenota.html': repo + '/prenota',
+    'main': repo + '/home',
+    'chiSiamo': repo + '/chi-siamo',
+    'galleria': repo + '/galleria',
+    'map': repo + '/mappa',
+    'contatti': repo + '/contatti',
+    'prenota': repo + '/prenota',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
